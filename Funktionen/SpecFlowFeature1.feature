@@ -1,11 +1,18 @@
-﻿Feature: SpecFlowFeature1
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+﻿Feature: Taschenrechner trigonometrische Funktionen
+	Als Kunde möchte ich einen Taschenrechner haben, welcher die trigonimischen Funktionen berechnen kann, damit die Berechnungen korrekt sind.
 
-@mytag
-Scenario: Add two numbers
-	Given the first number is 50
-	And the second number is 70
-	When the two numbers are added
-	Then the result should be 120
+
+Scenario: Sinus
+	Given The customer clicks on <sinus>
+	When the customer enter the number 3.14159
+	Then the result should be 0
+
+	Scenario: Cosinus
+	Given the first number is <PI>
+	When the customer enter the number 3.14159
+	Then the result should be -1
+
+	Scenario: Tangens
+	Given the first number is <PI>
+	When the customer enter the number 3.14159
+	Then the result should be 0
